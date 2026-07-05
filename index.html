@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creativa Eventos Ivonete</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#inicio" class="brand" aria-label="Creativa Eventos Ivonete">
+      <div class="brand-name">CREATIVA</div>
+      <div class="brand-subtitle">EVENTOS IVONETE</div>
+    </a>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#casamento">Casamento</a>
+      <a href="#aniversario">Aniversário</a>
+      <a href="#brinquedos">Brinquedos</a>
+      <a href="#quem-somos">Quem somos</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Transformamos sonhos em momentos <em>inesquecíveis</em></h1>
+        <p>Casamentos, aniversários e brinquedos para eventos com cuidado, beleza e atenção a cada detalhe.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#casamento">Ver eventos</a>
+          <a class="btn ghost" target="_blank" href="https://wa.me/5545999406983?text=Quero%20um%20or%C3%A7amento%20para%20meu%20evento">Pedir orçamento</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/hero-luxo.jpg" alt="Decoração de casamento ao ar livre" />
+      </div>
+    </section>
+
+    <section class="services" aria-label="Categorias de eventos">
+      <button id="casamento" class="service-card" data-gallery="casamento">
+        <img src="assets/album-casamento-01.jpg" alt="Decoração para casamento" />
+        <strong>Casamento</strong>
+      </button>
+      <button id="aniversario" class="service-card" data-gallery="aniversario">
+        <img src="assets/album-aniversario-01.jpg" alt="Decoração para aniversário" />
+        <strong>Aniversário</strong>
+      </button>
+      <button id="brinquedos" class="service-card" data-gallery="brinquedos">
+        <img src="assets/album-brinquedos-01.jpg" alt="Brinquedos para festa infantil" />
+        <strong>Brinquedos</strong>
+      </button>
+    </section>
+
+    <section class="gallery-block" id="galeria">
+      <div class="section-title">
+        <span>Galeria interativa</span>
+        <h2 id="galleryTitle">Casamento</h2>
+        <p>Clique nos botões acima para trocar a categoria. Clique na foto principal para ver a próxima imagem.</p>
+      </div>
+      <div class="gallery-viewer">
+        <button class="arrow" id="prevPhoto" aria-label="Foto anterior">‹</button>
+        <img id="mainGalleryImage" src="assets/casamento-01.jpg" alt="Foto do evento" />
+        <button class="arrow" id="nextPhoto" aria-label="Próxima foto">›</button>
+      </div>
+      <div class="thumbs" id="thumbs"></div>
+    </section>
+
+    <section class="about" id="quem-somos">
+      <div class="about-copy">
+        <span class="eyebrow">Quem somos</span>
+        <h2>Criatividade, carinho e beleza em cada celebração</h2>
+        <p>A Creativa Eventos Ivonete nasceu do amor por celebrar momentos e da paixão por transformar ideias em realidade.</p>
+        <p>Com dedicação, criatividade e atenção aos detalhes, cuidamos de cada evento como único e especial, tornando sonhos em experiências inesquecíveis.</p>
+      </div>
+      <div class="about-photo">
+        <img src="assets/quem-somos.jpg" alt="Detalhe floral de casamento" />
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature"><span>☎</span><strong>Atendimento personalizado</strong></div>
+      <div class="feature"><span>◇</span><strong>Qualidade e excelência</strong></div>
+      <div class="feature"><span>♡</span><strong>Paixão por realizar</strong></div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <strong>Creativa Eventos Ivonete</strong>
+    <p>Casamentos, aniversários e brinquedos para momentos inesquecíveis.</p>
+  </footer>
+
+  <div class="floating-actions">
+    <a class="float-btn whatsapp" target="_blank" aria-label="WhatsApp Orçamento" href="https://wa.me/5545999406983?text=Quero%20um%20or%C3%A7amento%20para%20meu%20evento">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3.1A12.75 12.75 0 0 0 5.15 22.5L3.7 28.9l6.55-1.55A12.75 12.75 0 1 0 16.02 3.1Zm0 2.35a10.4 10.4 0 0 1 8.87 15.83 10.41 10.41 0 0 1-13.95 3.64l-.46-.24-3.78.9.84-3.7-.27-.48A10.4 10.4 0 0 1 16.02 5.45Zm-4.04 5.37c-.24 0-.62.09-.95.45-.33.36-1.25 1.22-1.25 2.98s1.28 3.45 1.46 3.69c.18.24 2.47 3.95 6.1 5.38 3.02 1.19 3.63.96 4.28.9.65-.06 2.1-.86 2.4-1.69.3-.83.3-1.54.21-1.69-.09-.15-.33-.24-.69-.42-.36-.18-2.1-1.04-2.42-1.16-.33-.12-.57-.18-.81.18-.24.36-.93 1.16-1.14 1.4-.21.24-.42.27-.78.09-.36-.18-1.52-.56-2.9-1.79-1.07-.95-1.79-2.13-2-2.49-.21-.36-.02-.56.16-.74.16-.16.36-.42.54-.63.18-.21.24-.36.36-.6.12-.24.06-.45-.03-.63-.09-.18-.81-1.95-1.11-2.67-.29-.7-.58-.6-.81-.61h-.68Z"/></svg>
+    </a>
+    <a class="float-btn instagram" target="_blank" aria-label="Instagram Creativa Eventos Ivonete" href="https://www.instagram.com/creativa_eventos_ivonete?igsh=MTFvbjE0ZWV6YmNlcg==">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10.2 3.5h11.6a6.7 6.7 0 0 1 6.7 6.7v11.6a6.7 6.7 0 0 1-6.7 6.7H10.2a6.7 6.7 0 0 1-6.7-6.7V10.2a6.7 6.7 0 0 1 6.7-6.7Zm0 2.5A4.2 4.2 0 0 0 6 10.2v11.6a4.2 4.2 0 0 0 4.2 4.2h11.6a4.2 4.2 0 0 0 4.2-4.2V10.2A4.2 4.2 0 0 0 21.8 6H10.2Zm5.8 4.3a5.7 5.7 0 1 1 0 11.4 5.7 5.7 0 0 1 0-11.4Zm0 2.5a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Zm6-3.05a1.35 1.35 0 1 1 0 2.7 1.35 1.35 0 0 1 0-2.7Z"/></svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
