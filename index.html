@@ -6,7 +6,7 @@
   <title>Creativa Eventos Ivonete</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,8 +15,7 @@
       <div class="brand-name">CREATIVA</div>
       <div class="brand-subtitle">EVENTOS IVONETE</div>
     </a>
-    <nav>
-      <a href="#inicio">Início</a>
+    <nav aria-label="Menu principal">
       <a href="#casamento">Casamento</a>
       <a href="#aniversario">Aniversário</a>
       <a href="#brinquedos">Brinquedos</a>
@@ -30,12 +29,11 @@
         <h1>Transformamos sonhos em momentos <em>inesquecíveis</em></h1>
         <p>Casamentos, aniversários e brinquedos para eventos com cuidado, beleza e atenção a cada detalhe.</p>
         <div class="hero-actions">
-          <a class="btn primary" href="#casamento">Ver eventos</a>
-          <a class="btn ghost" target="_blank" href="https://wa.me/5545999406983?text=Quero%20um%20or%C3%A7amento%20para%20meu%20evento">Pedir orçamento</a>
+          <a class="btn primary" target="_blank" href="https://wa.me/5545999406983?text=Quero%20um%20or%C3%A7amento%20para%20meu%20evento">Pedir orçamento</a>
         </div>
       </div>
       <div class="hero-photo">
-        <img src="assets/hero-luxo.jpg" alt="Decoração de casamento ao ar livre" />
+        <img src="assets/hero-luxo.jpg" alt="Decoração elegante de evento" />
       </div>
     </section>
 
@@ -62,7 +60,7 @@
       </div>
       <div class="gallery-viewer">
         <button class="arrow" id="prevPhoto" aria-label="Foto anterior">‹</button>
-        <img id="mainGalleryImage" src="assets/casamento-01.jpg" alt="Foto do evento" />
+        <img id="mainGalleryImage" src="assets/album-casamento-01.jpg" alt="Foto do evento" />
         <button class="arrow" id="nextPhoto" aria-label="Próxima foto">›</button>
       </div>
       <div class="thumbs" id="thumbs"></div>
