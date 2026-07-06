@@ -20,3 +20,20 @@ function prev(){ const list=galleries[current]; if(!list.length)return; index=(i
 document.querySelectorAll('.service-card').forEach(btn=>btn.addEventListener('click',()=>{current=btn.dataset.gallery; index=0; render(); document.getElementById('galeria').scrollIntoView({behavior:'smooth'});}));
 document.getElementById('nextPhoto').onclick=next; document.getElementById('prevPhoto').onclick=prev; img.onclick=next;
 render();
+
+
+const heroVideo = document.getElementById('heroVideo');
+const soundToggle = document.getElementById('soundToggle');
+if (heroVideo && soundToggle) {
+  soundToggle.addEventListener('click', async () => {
+    heroVideo.muted = !heroVideo.muted;
+    heroVideo.volume = heroVideo.muted ? 0 : 1;
+    soundToggle.textContent = heroVideo.muted ? '🔈 Ativar som' : '🔇 Desativar som';
+    soundToggle.setAttribute('aria-label', heroVideo.muted ? 'Ativar som do vídeo' : 'Desativar som do vídeo');
+    try {
+      await heroVideo.play();
+    } catch (e) {
+      // Em alguns celulares, o play precisa vir direto do clique do usuário.
+    }
+  });
+}
