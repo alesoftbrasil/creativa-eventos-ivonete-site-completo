@@ -1,3 +1,1 @@
-# Creativa Eventos Ivonete
-
-Site estático pronto para subir no GitHub/Vercel.
+Site Creativa Eventos Ivonete atualizado com vídeo no banner, botão de som e álbum Casamentos com 29 fotos.
